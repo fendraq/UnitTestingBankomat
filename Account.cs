@@ -3,7 +3,7 @@ namespace banko;
 public class Account{
     int balance = 5000;
     
-    public int withdraw(int amount){
+    public int Withdraw(int amount){
         if(amount > 0 && balance >= amount){
             balance -= amount;
             return amount;

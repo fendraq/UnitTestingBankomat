@@ -11,7 +11,7 @@ public class Bankomat {
   List<string> msgs = new List<string>();
 
   public bool IsCardInserted { get; private set; } //Added for better handling of private for testning
-
+  public IReadOnlyList<string> Messages => msgs; //Added for testing messages without exposing msgs.
   public int GetMachineBalance()
   {
     return machineBalance;
@@ -59,10 +59,10 @@ public class Bankomat {
     }
   }
 
-  public int withdraw(int amount){
+  public int Withdraw(int amount){
     if(amount > 0 && amount <= machineBalance && amount <= card.account.getBalance()){
       machineBalance -= amount;
-      card.account.withdraw(amount);
+      card.account.Withdraw(amount);
       msgs.Add("Withdrawing " + amount);
       return amount;
     }else{

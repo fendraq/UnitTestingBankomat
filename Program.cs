@@ -15,21 +15,21 @@ class Program
         Console.WriteLine(bankomat.getMessage());
         bankomat.enterPin("0123");
         Console.WriteLine(bankomat.getMessage());
-        bankomat.withdraw(15000);
+        bankomat.Withdraw(15000);
         Console.WriteLine(bankomat.getMessage());
-        bankomat.withdraw(8000);
+        bankomat.Withdraw(8000);
         Console.WriteLine(bankomat.getMessage());
-        bankomat.withdraw(3000);
+        bankomat.Withdraw(3000);
         Console.WriteLine(bankomat.getMessage());
         bankomat.ejectCard();
         Console.WriteLine(bankomat.getMessage());
-        bankomat.withdraw(100);
+        bankomat.Withdraw(100);
         Console.WriteLine(bankomat.getMessage());
         bankomat.insertCard(card);
         Console.WriteLine(bankomat.getMessage());
         bankomat.enterPin("0123");
         Console.WriteLine(bankomat.getMessage());
-        bankomat.withdraw(1000);
+        bankomat.Withdraw(1000);
         Console.WriteLine(bankomat.getMessage());
         bankomat.ejectCard();
     }
